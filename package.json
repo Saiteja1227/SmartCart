@@ -1,0 +1,9 @@
+{
+  "name": "smartcart-deployment",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "cd something && npm start",
+    "build": "cd something && npm install && npm run build",
+    "test": "cd something && npm test"
+  }
+}
