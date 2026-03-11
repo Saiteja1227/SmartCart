@@ -1,14 +1,19 @@
 {
-  "version": 2,
-  "buildCommand": "cd something && npm install && npm run build",
+  "buildCommand": "cd something && npm run build",
   "outputDirectory": "something/build",
-  "devCommand": "cd something && npm start",
   "installCommand": "cd something && npm install",
-  "framework": null,
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/(.+\\.(js|css|png|jpg|jpeg|gif|ico|svg|json))",
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
