@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f5f5;
+}
+
+/* Amazon-style color scheme */
+:root {
+  --amazon-orange: #febd69;
+  --amazon-dark-orange: #f3a847;
+  --amazon-navy: #131921;
+  --amazon-light-navy: #232f3e;
+  --amazon-blue: #007185;
+  --amazon-price-red: #B12704;
+  --text-primary: #0F1111;
+  --text-secondary: #565959;
+}
+
+/* Remove default Bootstrap styles that conflict */
+.jumbotron {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+/* Card Styles */
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+}
+
+.card-img-top {
+  transition: transform 0.3s;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Button Styles */
+.btn {
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.btn-primary {
+  background-color: var(--amazon-orange);
+  border-color: var(--amazon-orange);
+  color: #111;
+}
+
+.btn-primary:hover {
+  background-color: var(--amazon-dark-orange);
+  border-color: var(--amazon-dark-orange);
+  color: #111;
+}
+
+.btn-outline-primary {
+  color: var(--amazon-blue);
+  border-color: var(--amazon-blue);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--amazon-blue);
+  border-color: var(--amazon-blue);
+  color: white;
+}
+
+/* Text Colors */
+.text-primary {
+  color: var(--amazon-price-red) !important;
+}
+
+/* Shadows */
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Links */
+a {
+  color: var(--amazon-blue);
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #C7511F;
+}
+
+/* Container Adjustments */
+.container {
+  max-width: 1500px;
+}
+
+/* Loading Spinner */
+.spinner-border {
+  color: var(--amazon-orange);
+}
+
+/* Badge Styles */
+.badge {
+  font-weight: 500;
+  padding: 6px 12px;
+}
+
+.bg-secondary {
+  background-color: #6c757d !important;
+}
+
+/* Price Display */
+.price {
+  color: var(--amazon-price-red);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  
+  .container {
+    padding: 0 10px;
+  }
+}
+
+/* Utilities */
+.text-center {
+  text-align: center;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.p-5 {
+  padding: 3rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+/* App-specific */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Override default link underline */
+.nav-link {
+  text-decoration: none !important;
+}
+

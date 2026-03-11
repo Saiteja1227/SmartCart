@@ -1,0 +1,21 @@
+{
+  "short_name": "SmartCart",
+  "name": "SmartCart - Shop Smart, Live Better",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#FF6B6B",
+  "background_color": "#ffffff",
+  "description": "Your ultimate online shopping destination. Shop electronics, fashion, home goods and more!"
+}
